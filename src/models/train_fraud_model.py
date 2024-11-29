@@ -1,4 +1,22 @@
-# train_fraud_model.py
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+import joblib
+import numpy as np
+
 def train_model():
-    # Função para treinar o modelo de fraude
-    pass
+    X = np.random.rand(100, 3)  
+    y = np.random.randint(0, 2, 100)
+    
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    model = RandomForestClassifier()
+    model.fit(X_train, y_train)
+    
+    predictions = model.predict(X_test)
+    accuracy = accuracy_score(y_test, predictions)
+    print(f"Modelo treinado com precisão: {accuracy * 100:.2f}%")
+    
+    joblib.dump(model, "models/fraud_model.pkl")
+
+if __name__ == "__main__":
+    train_model()

@@ -1,4 +1,5 @@
-# send_alerts.py
 def send_alert(message):
-    # Função para enviar um alerta de fraude
-    pass
+    print(f"ALERT: {message}")
+
+if __name__ == "__main__":
+    send_alert("Fraude detectada no documento ID 12345.")
