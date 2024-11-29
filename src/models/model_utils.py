@@ -1,4 +1,4 @@
-# model_utils.py
+import joblib
+
 def load_model(model_path):
-    # Função para carregar o modelo salvo
-    pass
+    return joblib.load(model_path)
