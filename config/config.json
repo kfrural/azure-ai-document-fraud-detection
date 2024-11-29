@@ -1,8 +1,7 @@
 {
-    "form_recognizer_endpoint": "https://<seu-endpoint>.cognitiveservices.azure.com/",
-    "form_recognizer_key": "<sua-chave>",
-    "storage_account_name": "<seu-storage-account>",
-    "storage_account_key": "<sua-storage-key>",
-    "model_endpoint": "<seu-endpoint-do-modelo>"
-  }
-  
+  "form_recognizer_endpoint": "https://<seu-endpoint>.cognitiveservices.azure.com/",
+  "form_recognizer_key": "<sua-chave>",
+  "storage_account_name": "<seu_storage_account>",
+  "storage_account_key": "<sua_storage_key>",
+  "model_endpoint": "<endpoint-do-modelo>"
+}
