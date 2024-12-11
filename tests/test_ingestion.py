@@ -8,4 +8,3 @@ def test_validate_document():
         validate_document("invalid_file.txt")
     validate_document("data/samples/sample_doc.pdf")
 
-# Rode os testes com: pytest tests/test_ingestion.py

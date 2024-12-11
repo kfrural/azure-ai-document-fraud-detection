@@ -1,11 +1,22 @@
-import os
-
-def validate_document(file_path):
-    if not os.path.exists(file_path):
-        raise FileNotFoundError(f"Arquivo não encontrado: {file_path}")
-    if not file_path.lower().endswith((".pdf", ".jpg", ".png")):
-        raise ValueError("Tipo de arquivo não suportado. Apenas PDF, JPG e PNG são aceitos.")
-    print(f"Documento válido: {file_path}")
-
 if __name__ == "__main__":
-    validate_document("data/samples/sample_doc.pdf")
+    files_to_validate = [
+        "data/samples/sample_doc.pdf",
+        "data/samples/invalid_file.txt",
+        "data/samples/empty_file.pdf"
+    ]
+
+    valid, result_message = validate_files(files_to_validate)
+    
+    if valid:
+        print(result_message)
+    else:
+        print("Validação falhou.")
+        print(result_message)
+
+    single_valid, single_result_message = validate_single_file("data/samples/sample_doc.pdf")
+    
+    if single_valid:
+        print(single_result_message)
+    else:
+        print("Validação falhou.")
+        print(single_result_message)

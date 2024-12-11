@@ -6,4 +6,4 @@ def preprocess_data(data):
 if __name__ == "__main__":
     sample_data = {"document_id": "12345", "status": "expired"}
     alerts = preprocess_data(sample_data)
-    print(alerts)
+    print(f"Alertas detectados: {alerts}")
