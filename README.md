@@ -40,10 +40,6 @@ This template provides a basic structure for document analysis and fraud detecti
 
 Each file serves as a starting point that needs to be customized based on your specific requirements and data structures.
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit pull requests or open issues.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
