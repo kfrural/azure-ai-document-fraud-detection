@@ -1,5 +1,27 @@
-__pycache__/
-*.pyc
-data/processed/
-config/config.json
+# Arquivos de configuração
+.env
+secrets.json
 
+# Pastas temporárias
+*.pyc
+__pycache__
+*.log
+
+# Arquivos gerados
+*.csv
+*.json
+*.pdf
+
+# Dependências do Python
+venv/
+env/
+
+# IDEs e editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Outros arquivos específicos
+.DS_Store
+Thumbs.db
